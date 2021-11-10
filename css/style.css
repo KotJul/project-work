@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+body{
+font-family: 'Lora', serif;
+font-weight: 400;
+}
+.font-roboto, .font-roboto a{
+font-family: 'Roboto', sans-serif;
+font-weight: 700;
+}
+header{
+  height: 80px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+
+  position: absolute;/*будет поверх картинки */
+  z-index: 1;/*выведет наш хэдэр наверх картинки*/
+}
+.banner img{
+  width: 100%;
+  height: 600px;/*посмотреть в фигме*/
+  object-fit: cover;/*заполнение картинкой выделенной области*/
+}
+.header-flex{
+  padding: 0px 70px;
+  display: flex;
+  justify-content: space-between;/*раскидывает по сторонам*/
+  align-items: center;/*выравнивает лого по центру*/
+  height: 100%;
+}
+.header-nav ul{
+  display: flex;
+  align-items: center;
+}
+.header-nav ul li a{
+  font-size: 12px;
+  line-height: 14px;
+  color: #E5E5E5;
+  transition: all .3s;
+  
+}
+.header-nav ul li{
+  margin-right: 25px;
+}
+.header-nav ul li:last-child{/*в последнем элементе меняет отступ справа*/
+  margin-right: 0px;
+}
+.header-nav ul li a:hover{
+  color:#FFFFFF;
+  transition: all .3s;
+}
+.header-flex-2,
+.header-social ul{
+  display: flex;
+
+}
+.header-social ul li{
+  margin-right: 18px;
+}
+.header-social ul li:last-child{
+  margin-right: 0px;
+}
+.header-social{/*делаем вертикальные черточки*/
+  margin: 0px 17px;
+  border-left: 0.5px solid #E5E5E5;
+  border-right: 0.5px solid #E5E5E5; 
+  padding: 0px 17px;
+}
+.banner{
+  position: relative;/*меняет точку исчесления для дочерних элементов
+  точка 0:0 будет в левом верхнем углу этого блока*/
+}
+.banner-info{
+  position: absolute;
+  width: 530px;
+  left: 70px;
+  bottom: 140px;
+}
+.tag{
+  background: rgb(255,255,255,0.15);/*смотрим в фигме*/
+  border-radius: 8px;
+  padding: 5px 10px;
+
+  font-family: "Roboto",sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+
+  color: #FFFFFF;
+}
+.middle-line{/*делаем линии, но не с помощью бордера*/
+  height: 1px;
+  width: 30px;
+  background: #E5E5E5;
+  margin: 9px 11px;
+}
+.date-text{
+  display: flex;
+}
+h1{
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 46px;
+}
+p{
+  color:  #E5E5E5;
+}
+.data{
+  font-size: 12px;
+  line-height: 15px;
+}
+.text{
+  font-size: 12px;
+  line-height: 20px;
+}
