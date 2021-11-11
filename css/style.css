@@ -194,4 +194,8 @@ h1{
   font-size: 12px;
   line-height: 20px;
 }
-
+.topic-list{
+  display: flex;
+  flex-wrap: wrap;/*будет переносить на новую строку*/
+  gap: 50px 20px;/*позволяет выстроить отсупы*/
+}
