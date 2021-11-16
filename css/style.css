@@ -199,3 +199,79 @@ h1{
   flex-wrap: wrap;/*будет переносить на новую строку*/
   gap: 50px 20px;/*позволяет выстроить отсупы*/
 }
+
+.big-post{
+  position: absolute;
+  top: 224px;
+  left: calc(50% - 530px / 2);
+
+  width: 530px;
+  text-align: center;
+  color: #fff;
+}
+.big-post h2{
+  color: #fff;
+  font-size: 36px;
+  line-height: 46px;
+  margin-top: 24px;
+}
+.line{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.big-post-text{
+  margin: 13px auto 24 auto;
+  width: 420px;
+  font-size: 12px;
+  margin-left: 55px;
+}
+.big-post-data{
+  margin-top: 15px;
+}
+.big-post .middle-line{
+  width: 30px;
+  margin: 0px auto;
+}
+.topic{
+  cursor: pointer;/*делаем курсор в виде руки*/
+
+}
+.topic-image{
+  overflow: hidden;/*скрывает содержимое, выходящее за пределы контейнера*/
+  border-radius: 5px;
+  
+}
+.topic:hover .topic-image img{
+  transform: scale(1.2);/*при наведении картинка увеличивается*/
+  transition: all 0.3s;
+}
+.tag-list{
+  z-index: 1;
+}
+.post{
+  position: relative;
+  width: 420px;
+  height: 350px;
+}
+.post img{
+  max-width: 100%;/*чтобы она не была больше нашего блока*/
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;/*способ заполнения картинки*/
+  width: 100%;
+}
+.post .topic{
+  color: #e5e5e5;
+  position: absolute;
+  z-index: 1;
+  bottom: 42px;
+  left: 40px;
+  width: auto;
+  right: 40px;
+}
+.post .topic .topic-title{
+  color: #fff;
+}
+
