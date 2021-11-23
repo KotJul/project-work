@@ -1,0 +1,19 @@
+@media screen and (max-width:1300px) {
+    .container{
+      width: 97%;/*100% не ставят*/
+    }
+}
+@media screen and (max-width:730px) {
+    .header-flex-2{
+      display: none;/*убирает содержимое шапки кроме логотипа*/
+    }
+}
+@media screen and (max-width:600px){
+    .banner-info,
+     .big-post{
+      width: 90%;
+      left: 50%;/*считает ширину от родителя*/
+      transform: translateX(-50%);/*считает ширину от того блока к которому применяеться*/
+    }
+}
+  
