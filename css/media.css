@@ -2,7 +2,25 @@
     .container{
       width: 97%;/*100% не ставят*/
     }
+    .topic{
+      width: 32%;/*разделили ширину родителя в 100% на три картинки, с учетом отступов*/
+    }
+    .topic-list{
+       justify-content: space-between;/*сделали одинаковые отступы между картинками*/
+    }
 }
+@media screen and (max-width:1030px){
+  .topic{
+    width: 48%;/*если две картинки*/
+  }
+  .post-list{
+    overflow-x: auto;/*автоматически решает что нужно сделать,при задании мин ширины может появиться скролл*/
+  }
+  .post{
+    min-width: 420px;/*минимальная ширина картинки*/
+  }
+}
+
 @media screen and (max-width:730px) {
     .header-flex-2{
       display: none;/*убирает содержимое шапки кроме логотипа*/
@@ -15,5 +33,50 @@
       left: 50%;/*считает ширину от родителя*/
       transform: translateX(-50%);/*считает ширину от того блока к которому применяеться*/
     }
+    .banner-info{
+      text-align: center;
+    }
+    .banner-info-flex{
+      flex-direction: column;/*ставим в колонку*/
+      align-items: center;/*используем даное свойство потому что при column меняются оси*/
+    }
+    
 }
+@media screen and (max-width:515px){
+  .topic{
+    width: 100%;
+  }
+  .filter-list{
+    display: none;/*скрываем наши фильтры*/
+  }
+  .mobile-filter{
+    display: block;/*показали скрытый блок*/
+    margin: 15px 0px;
+  }
+  .mobile-filter p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #495057;
+  }
+  .mobile-filter select{
+    width: 100%;
+    border: 1px solid  #495057;
+    color: #495057;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+ .big-post-text{
+   width: auto;
+ }
+ .footer-container{
+   flex-wrap: wrap;/*перенос на новую строку для флекс элемента*/
+   gap: 30px 0px;
+ }
+ .footer-container div:nth-child(1){/*меняем 1 див с 4 дивом местами,применяется для флексовых блоков*/
+   order: 4;
+ }
+}
+
+
   
