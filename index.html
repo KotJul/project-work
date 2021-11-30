@@ -15,11 +15,33 @@
 </head>
 
 <body>
+  <input type="checkbox" id="hamburger"> <!--универсальный тег для работы с пользователем-->
   <header>
     <div class="header-flex">
       <div>
         <img src="image/RUNO.png" alt="logo">
       </div>
+      <!--мобильная версия, кнопка гамбургер-->
+      <div class="mobile-nav">
+       <!-- <input type="checkbox" id="hamburger">-->
+        <div class="mobile-hamburger-container">
+          <!--сдесь раньше был импут-->
+          <label class="hamburger-label" for="hamburger"><!--используеться в паре с for, привязывает к чему то-->
+            <span class="hamburger"></span>
+          </label>
+        </div>
+        <div class="mobile-menu">
+          <nav class="font-roboto">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Articles</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!---->
       <div class="header-flex-2">
         <nav class="header-nav font-roboto">
           <ul>

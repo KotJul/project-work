@@ -344,6 +344,7 @@ h3{
   color: #e5e5e5;
   
 }
-.mobile-filter{
+.mobile-filter,/*скроет на маленьком разрешении экрана*/
+.mobile-nav{
   display: none;
 }
