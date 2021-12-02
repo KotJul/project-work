@@ -94,9 +94,17 @@
     }
     .mobile-menu ul li{
       text-align: right;
-
     }
-  
+    .mobile-menu ul li a{
+      color: #e5e5e5;
+      font-size: 18px;
+      margin-right: 25px;
+      transition: all 0.5s;
+    }
+    .mobile-menu ul li a:hover{
+      color: #D4A373;
+      transition: all 0.5s;
+    }
 }
 @media screen and (max-width:600px){
     .banner-info,
